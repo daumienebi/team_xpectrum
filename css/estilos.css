@@ -1,0 +1,765 @@
+/** @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);*/
+body{
+
+    margin:0;
+    padding :0;
+    font-family: 'Open Sans','HelveticaNeue', Helvetica, sans-serif;
+    line-height: 1.45;
+}
+
+#logo{
+    background-color: black;
+}
+
+.desktop{
+    transition: 0.6s;
+}
+.desktop:hover{
+    transform: scale(1.1);
+    
+}
+header{
+    color:#e48080;
+   /** background-color: #ac2d57; */
+    
+    background-image: url(../imagenes/fire.gif);
+    background-size: 50%;
+    padding:23px 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-top: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: antiquewhite;
+    transition: 0.9s;
+    
+}
+
+h2{
+    font-weight: 300;
+    font-size: 24px;
+    
+}
+
+.contenedor{
+    /** margin 0 auto para que el contenido este en el centro del contenedor da igual el tamaño*/
+    margin:0 auto;
+    /** 20px a la derecha e izquiera para que los hijos estén alejados 20px del borde
+    de la pantalla*/
+    padding: 0 20px 0 20px;
+    /** max-width: de 900 para que el texto no sea demasiado ancho;*/ 
+    max-width: 900px;
+    
+}
+
+.contenedor img{
+    width: 25px;
+    padding: 5px;
+    float: left;
+}
+
+
+
+/**
+░█▀▄▀█ ░█▀▀▀ ░█▀▀▄ ▀█▀ ─█▀▀█ 　 ░█▀▀█ ░█─░█ ░█▀▀▀ ░█▀▀█ ▀█▀ ░█▀▀▀ ░█▀▀▀█ 
+░█░█░█ ░█▀▀▀ ░█─░█ ░█─ ░█▄▄█ 　 ░█─░█ ░█─░█ ░█▀▀▀ ░█▄▄▀ ░█─ ░█▀▀▀ ─▀▀▀▄▄ 
+░█──░█ ░█▄▄▄ ░█▄▄▀ ▄█▄ ░█─░█ 　 ─▀▀█▄ ─▀▄▄▀ ░█▄▄▄ ░█─░█ ▄█▄ ░█▄▄▄ ░█▄▄▄█
+*/
+
+@media (max-width:300px){
+
+    .unirse{
+        display: none;
+    }
+
+    #logo img{
+        position: static;
+        width: 100%;
+        height: 250px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .btn{
+        margin: 10px;
+        display:inline-block;
+    }
+    header{
+        background-image: url(../imagenes/fire.gif);
+        background-size: 150%;
+        background-position: center;
+    }
+
+    #menuOptions .option{
+        margin-bottom: 15px;
+        background-image: url(../imagenes/gal5.jpg);
+        background-size: 200%;
+    }
+    
+    #menuOptions{
+        background-image: url(../imagenes/fire.gif);
+    }
+
+    #camiseta p{
+        font-size: 15px;
+        font-weight: bold;
+        color: #353535;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 5px 0 0 0;
+    }
+
+    .desktop{
+        display: none;
+    }
+    
+}
+@media (min-width:301px){
+
+    .unirse{
+        display: none;
+    }
+    #logo img{
+        position: static;
+        width: 100%;
+        height: 250px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .btn{
+        margin: 10px;
+        display:inline-block;
+    }
+    .lema img{
+        width: 70%;
+    }
+    header{
+        background-image: url(../imagenes/fire.gif);
+        background-size: 100%;
+    }
+
+    #menuOptions{
+        background-image: url(../imagenes/fire.gif);
+        background-size: 40%;
+
+    }
+
+    #menuOptions .option{
+        margin-bottom: 15px;
+        background-image: url(../imagenes/gal5.jpg);
+        background-size: 150%;
+    }
+
+    #camiseta p{
+        font-size: 20px;
+        font-weight: bold;
+        color: #353535;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 5px 0 0 0;
+    }
+
+    footer{
+        
+        
+        background-image: url(../imagenes/fire.gif);
+        background-size: 390%;
+        background-position: right;
+    }
+    
+    .desktop{
+        display: none;
+    }
+}
+
+@media (min-width:481px){
+
+    .unirse{
+        display: none;
+    }
+    h1{
+        font-size: 45px;
+        text-align: center;
+        
+    }
+    /** make it logo like (like for big screens)
+    /**
+    #logo img{
+        width: 175px;
+        height: 166px;
+        position:absolute;
+        top: -2;
+    }
+    */
+    #logo img{
+        position: static;
+        width: 100%;
+        height: 350px;
+    }
+
+    #camiseta p{
+        font-size: 30px;
+        font-weight: bold;
+        color: #353535;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 5px 0 0 0;
+    }
+
+    #camiseta img{
+        width: 330px;
+        height: 350px;
+        padding: 5px;
+    }
+}
+
+@media (min-width:768px){
+
+    .unirse{
+        display: none;
+    }
+    #logo img{
+        position: static;
+        width: 100%;
+        height: 400px;
+    }
+    h1{
+        font-size: 60px;
+    }
+    .btn{
+        margin: 20px;
+        display:inline-block;
+    }
+
+    #menuOptions .option{
+        margin-bottom: 15px;
+        width: 600px;
+    }
+
+    #camiseta p{
+        font-size: 40px;
+        font-weight: bold;
+        color: #353535;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 5px 0 0 0;
+    }
+
+    #camiseta img{
+        width: 320px;
+        height: 400px;
+    }
+}
+
+@media(min-width:1100px){
+
+
+    .unirse{
+        background-color: #1c7955ef;
+        width: fit-content;
+        border-radius: 5px;
+        padding: 1px;
+        float: right;
+        margin-right:25px;
+        display: block; /* Display block aqui para que se pueda visualizar(por haberlo ocultado con
+        Display:none en pantallas mas pequeñas)*/
+        transition: 0.5s;
+        font-weight: bolder;
+    }
+    
+    .unirse a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .unirse:hover{
+        color: white;
+        background-color: #000000;
+        cursor: pointer;
+        border : 1px solid white;
+    }
+    #menuOptions .option:hover{
+        transform:scale(1.1);
+        box-shadow: 2px 2px 2px 2px #ffffff73;
+    }
+    h1{
+        font-size: 70px;
+        text-align: center;
+    }
+    #logo img{   
+        height: 245px;
+        width: 210px;
+        position: absolute;
+        top :-2px;
+    }
+
+    #camiseta p{
+        font-size: 50px;
+        font-weight: bold;
+        color: #353535;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 5px 0 0 0;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: inline-block;
+    }
+
+    #camiseta img{
+        width: 350px;
+        height: 420px;
+    }
+
+    .bigger-shirt{
+        transition: 0.6s;
+    }
+    .bigger-shirt:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media(min-width:1490px){  /* 1490px para que ese vea cool en Opera*/
+    
+    h1{
+        font-size: 100px;
+        text-align: center;
+    }
+    #logo img{   
+        height: 299px;
+        width: 273px;
+        position: absolute;
+        top :-2px;
+    }
+
+    .contenedor .btn{
+        font-size: 25px;
+    }
+    .contenedor img{
+        width: 40px;
+    }
+
+    /** arreglar las sections para pantalla grande,*/
+    
+    /**another form of the menu*/
+    /**
+    #menuOptions .option{
+        width: 60%;
+        height: 400px;
+        margin:0 auto;
+        display: block;
+    }
+    */
+    
+    #menuOptions .option{
+        width:20%;
+        display: inline-block;
+        height: 400px;
+        margin: 0 80px 10px 80px;
+        
+        /** TO MAKE THE BACKGROUND IN THE MIDDLE FOR BIG SCREENS
+        background-size: 250%;
+        background-position: center;
+        */
+
+        background-size:350%;
+        background-position: left;
+        
+    }
+
+    #menuOptions .option:nth-child(5){
+        margin-left: 575px;
+    }
+    
+    
+    #menuOptions .option:nth-child(1):hover{
+        background-size: 210%;
+        background-position: center;
+    }
+
+    #menuOptions .option:nth-child(2):hover{
+        background-image: url(../imagenes/lol3.gif);
+        background-size: 220%;
+        background-position: center;    
+        
+    }
+
+    #menuOptions .option:nth-child(3):hover{
+        background-size: 185%;
+        background-position: center;    
+        
+    }
+
+    #menuOptions .option:nth-child(4):hover{
+        background-size: 190%;
+        background-position: center;    
+        
+    }
+
+    #menuOptions .option:nth-child(5):hover{
+        background-image: url(../imagenes/tuhoDirect.gif);
+        background-size: 125%;
+        background-position: center;    
+        
+    }
+    
+
+    #camiseta img{
+        width: 400px;
+        height: 470px;
+        margin: 0 auto;
+        padding: 15px;
+        display: inline-block;
+    }
+    #camiseta p{
+        font-size: 40px;
+        font-weight: bold;
+        color: #353535;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 5px 0 0 0;
+    }
+    
+    header{
+        
+       /* background-image: url(../imagenes/fire.gif);*/
+       background-image:  url(../imagenes/mainbg5.jpg);
+        background-size: 55%;
+    }   
+
+    #menuOptions{
+        background-image:url(../imagenes/mainbg5.jpg);
+        background-size: 150%;
+        background-position: right;
+    }
+    footer p{
+        font-size: 25px;
+    }
+
+    footer{
+        background-size: 50%;
+        background-position: right;
+    }
+
+    .mobile{
+        display: none;
+    }
+}
+
+/** FOR BIGGGGERRRR SCREENS*/
+    @media(min-width:1920px){
+        h1{
+            font-size: 150px;
+            text-align: center;
+        }
+        #logo img{   
+            height: 400px;
+            width: 370px;
+            position: absolute;
+            top :-2px;
+        }
+        .contenedor .btn{
+            font-size: 40px;
+        }
+        .contenedor img{
+            width: 50px;
+            padding: 10px;
+            float: left;
+        }
+        #menuOptions .option{
+            width: 60%;
+            display: inline-block;
+            margin: 0 0 0 400px;
+        }
+
+        #menuOptions .option:nth-child(5){
+            margin-left: 400px;
+        }
+        
+        /** to adjust the backgrounds*/
+
+        #menuOptions .option:nth-child(1):hover{
+            background-size: 100%;
+            background-position: center;    
+            
+        }
+    
+        #menuOptions .option:nth-child(2):hover{
+            background-size: 80%;
+            background-position: center;    
+            
+        }
+    
+        #menuOptions .option:nth-child(3):hover{
+            background-size: 65%;
+            background-position: center;    
+            
+        }
+    
+        #menuOptions .option:nth-child(4):hover{
+            background-size: 150%;
+            background-position: center;    
+            
+        }
+    
+        #menuOptions .option:nth-child(5):hover{
+            background-size: 75%;
+            background-position: center;    
+            
+        }
+
+        #camiseta p{
+            font-size: 80px;
+        }
+
+        #camiseta img{
+            height: 600px;
+            width: 600px;
+        }
+
+        footer p{
+            font-size: 45px;
+        }
+
+        .mobile{
+            display: none;
+        }
+               
+    }
+   
+/** DESEÑANDO LOS BOTONES*/
+    .btn{
+        display: inline-block; /** para que se porte como un bloque...nonsense bt i understand*/
+        color:white;
+        font-size:21px;
+        background-color: #0e0a0f;
+        border:none;
+        border-radius: 5px;
+        padding :10px;
+        cursor: pointer; 
+        text-decoration: none;  
+        transition: 0.5s;
+    }
+
+    .btn:hover{
+        background-color: rgba(185, 60, 29, 0.445);
+        box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.527);
+       
+    }
+    
+    /** KINDA WTF BUT IT WORKS ??...DONT UNCOMENT THIS PART XD*/
+    section{
+        padding :30px 0;
+        text-align: center;
+    }
+    
+
+#menuOptions{
+    /**
+    background: rgb(218,156,156);
+background: linear-gradient(90deg, rgba(218,156,156,1) 8%, rgba(74,57,57,1) 47%,
+ rgba(177,16,14,1) 100%);
+ */
+ /** la section que servira como el menu*/
+ /** background-image: url(../imagenes/fire.gif);*/
+ 
+ background-size: 1300px;
+ padding-bottom: 15px,0,15px,0;
+     font-size: 20px;
+     color:aliceblue;
+     font-weight: 100;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: left;
+     
+}
+
+/** para esconder los textos y mostrarlos con un efecto
+.option p{
+    display: none;
+}
+
+#menuOptions:hover{
+    flex-grow: 2.5;
+}
+*/
+
+
+/** how to design a cool button*/
+.option a{
+    border:1px solid none;
+    background: rgba(66, 105, 66, 0.87);
+    outline: none;
+    padding: 8px 18px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+.option a:hover{
+    background-color: #db511bd7;
+    
+}
+
+.option{
+    background-size: 100%;
+}
+/** usar :nth-child() para poner los ajustes a cada div dentro de la section asi tiene el mismo nombre de clase*/
+
+/* COMENT THIS CODE FOR ANOTHER EFECT ON THE PAGE DESIGN*/
+/*
+.option:nth-child(1){
+    background-color: rgba(167, 119, 245, 0.452);
+    background-image: url(../imagenes/fire.gif);
+}
+.option:nth-child(1):hover{
+    box-shadow: 10px 10px 10px 10px rgba(228, 222, 135, 0.418);
+    cursor: pointer;
+    background-image: url(../imagenes/torneos.PNG);
+    background-size: 150%;
+}
+
+.option:nth-child(2){
+    background-image: url(../imagenes/fire.gif);
+    
+}
+.option:nth-child(2):hover{
+    background-size: 140%;
+    background-image: url(../imagenes/lol3.gif);
+    
+}
+
+.option:nth-child(3){  
+    
+    background-image: url(../imagenes/fire.gif);
+    /**
+    background: rgb(72,188,150);
+    background: radial-gradient(circle, rgba(72,188,150,0.6842087176667542) 39%, rgba(53,74,177,1) 90%); 
+    *
+}
+
+.option:nth-child(3):hover{
+    box-shadow: 10px 10px 10px 10px #2834916b;
+    cursor: pointer;
+    background-image: url(../imagenes/ezekiel.gif);
+    background-size: 100%;
+    
+}
+.option:nth-child(4){    
+    background-color: #f18684;   
+    background-image: url(../imagenes/fire.gif);
+    
+}
+.option:nth-child(4):hover{
+    box-shadow: 10px 10px 10px 10px #f186847e;
+    cursor: pointer;
+    background-image: url(../imagenes/equipo.PNG);
+    background-size: 110%; 
+}
+
+.option:nth-child(5){   
+    background-color:#6ee2f1; 
+    transition: 0.7s;  
+    background-image: url(../imagenes/fire.gif);    
+}
+
+.option:nth-child(5):hover{
+    box-shadow: 10px 10px 10px 10px #8225ec60;
+    cursor: pointer;
+    background-image: url(../imagenes/twitch.png);
+     
+}
+
+*/
+
+.option{
+    width: 90%;
+    height: 350px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    transition: 0.7s;
+    /** margin 0 auto para que se centre en el section*/
+    margin: 0 auto;  
+    padding-left: 25px;
+    border: 1px solid;
+    border-color:rgba(196, 178, 178, 0.911);
+    box-shadow: 1px 1px 1px 1px #ecebeb79;
+    /**border-color: #e48080;*/
+}
+.option:hover{
+    font-style: oblique;
+    
+    /**
+        background-image: url(../imagenes/fire.gif);
+        background-size: 100%;
+    */
+}
+
+.lema{
+    /**background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+    
+    background: rgb(38,93,172);
+background: radial-gradient(circle, rgba(38,93,172,0.8802871490393032) 3%, rgba(255,242,225,1) 100%);
+}
+.movingText{
+    color: red;
+    font-size: 30px;
+    font-style: italic;font-weight: bolder;
+}
+
+.lema img{
+    width: 70%;
+}
+
+footer{
+    color:#868686;
+    padding:32px 0;
+    text-align: center;
+    /*
+    background-image: url(../imagenes/dfire.gif);
+    background-size: 50%;
+    */
+}
+footer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ecebeb;
+    border: 1px solid;
+    border-radius: 5px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background:#2c2b2b;
+    outline :none
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin: 5px;
+    display: inline-block;
+    
+
+}
+footer li a{
+    color: #ffffff;
+    background-color: black;
+    border-style: none;
+    border-radius: 7px;   
+    padding:5px;
+    border: 1px solid white;
+}
+
+footer li a:hover{
+    background-color: rgba(0, 0, 0, 0.877);
+    color: rgb(255, 255, 255);
+}
+
+
+
+  

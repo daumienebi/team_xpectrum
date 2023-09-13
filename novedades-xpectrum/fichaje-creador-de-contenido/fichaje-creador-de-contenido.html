@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Nuevo Incorporación</title>
+    <link rel="stylesheet" type="text/css" href="../../css/loader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/quitarBanner.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../jquery/fadeLoader.js"></script>
+    <link rel="shortcut icon" href="../../imagenes/logo.ico">   
+<!-- ESTILOS-->
+    <style>
+
+      .banner{
+        width: 100%;
+        border: 1px solid red;
+        background-color: brown;
+        margin-bottom: 0;
+        overflow-y: hidden;
+      }
+
+      .banner a{
+        text-decoration: none;
+        font-size: 30px;
+        color: aliceblue;
+
+      }
+
+      .banner a:hover{
+        cursor:pointer;
+      }
+
+      .banner-left{
+        width: 20%;
+        background-image: url(img/camiseta_front.png);
+        background-position: center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        float: left;
+        height:40vh;
+        margin-top: 20px;
+        margin-right: 5px;
+        overflow-y: hidden;
+      }
+
+      .banner-right{
+        width: 20%;
+        background-image: url(../../imagenes/ezekiel.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        float: right;
+        height:40vh;
+        margin-top: 400px;
+        overflow-y: hidden;
+      }
+
+      body{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+        'Lucida Sans', Arial, sans-serif;
+        background-color: rgba(202, 174, 136, 0.726);
+        overflow-x: hidden;
+        
+      }
+      .content{
+        margin: 10px 50px 10px 50px;
+        overflow-x: hidden;
+      }
+
+      .desc{
+        font-size: 20px;
+        margin: 20px;
+      }
+
+      .desc img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+      }
+
+      .desc p{
+        line-height: 1.5em;
+        text-align: left;
+      }
+
+      .desc h1{
+        background-color: rgba(0, 0, 0, 0.534);
+        width: fit-content;
+        color: white;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid none;
+        border-radius: 5px;
+      }
+
+      .autor p{
+        font-size: smaller;
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+        color: rgba(43, 40, 40, 0.87) ;
+      }
+
+      @media (max-width:1100px){
+        .banner-left{
+          display: none;
+        }
+        .banner-right{
+          display: none;
+        }
+      }
+      @media(min-width:768px){
+
+        .content{
+          margin: 10px 70px 10px 70px;
+        }
+        .desc p{
+          font-size: larger;
+          text-align: left;
+        }
+        .desc img{
+          display: block  ;
+          margin: 10px auto;
+          width: 400px;
+          height: auto;
+        }
+      }
+
+      @media (min-width :1100px){
+        .content{
+          margin: 20px 300px 10px 300px;
+        }
+        .desc p{
+          text-align:start;
+        }
+        .desc img{
+          width: 600px;
+          height: auto;
+        }
+
+        .autor p{
+          font-size: large;
+          font-weight: bolder;
+        }
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="banner">
+      <p><a href="../../templates/reclutamiento.html">ÚNETE A XPECTRUM</a></p>
+    </div>
+
+    <div class="banner-left">
+      
+    </div>
+
+    <div class="banner-right">
+      
+    </div>
+
+      <div class="content">
+            <article class="desc">
+              <h1>NUEVA INCORPORACIÓN</h1>
+              <p>Desde el Xpectrum estamos orgullosos de informarles sobre el fichaje de nuestro primer
+                creador de contenido;
+                <a href="https://twitch.tv/Eloy_g" style="text-decoration: none;color: rgba(127, 6, 240, 0.89); font-weight: bolder;">Eloy_g</a>
+                que retransmitirá en su canal de <a href="https://twitch.tv/Eloy_g" style="text-decoration: none;color: rgba(127, 6, 240, 0.89); font-weight: bolder;">Twitch</a>
+                los diversos eventos del equipo y mucho mas.
+                <img src="img/creador-de-contenido.jpg">
+                Esperemos que gracias al mutuo acuerdo tanto como del club como del creador se beneficien de este contrato
+                y prosperen en su futuro.</p>
+                <img src="img/creador-de-contenido3.jpg">
+                
+               
+               <div class="autor">
+                 <p>✍️: Team Xpectrum.</p>
+               </div>
+            </article>
+      </div>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+  </body>
+</html>

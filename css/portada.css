@@ -1,0 +1,299 @@
+*{
+    padding :0;
+    margin:0;
+}
+/* arreglar esta pagina con un contenedor y poner margin*/
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    display: inline-block; /** para que se porte como un bloque...nonsense bt i understand*/
+    color:rgba(255, 254, 254, 0.692);
+    font-size:21px;
+    background-color: #000000;
+    border:none;
+    border-radius: 15px;
+    padding :15px;
+    cursor: pointer; 
+    text-decoration: none;  
+    transition: 0.5s;
+}
+
+
+.btn:hover{
+    background-color: rgba(185, 60, 29, 0.445);
+    box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.527);
+   
+}
+
+#go a {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+    #go a {
+       margin-left: 250px;
+       padding: 15px 45px;
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white;            
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+       display: block;
+       text-decoration: none;
+     }
+
+     #go a:hover {
+       background-position: right; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+     }
+
+#go a:hover{
+    background-color: rgb(187, 135, 115);
+    
+}
+
+#go a {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%)}
+    #go a {
+       padding: 15px 45px;
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white;            
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+       display: block;
+     }
+
+     #go a:hover {
+       background-position: right; /* change the direction of the change here */
+       color: #fff;
+       text-decoration: none;
+     } 
+    
+
+footer a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ecebeb;
+    border: 1px solid;
+    border-radius: 5px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background:#2c2b2b;
+    outline :none;
+    
+}
+footer {
+    color:#868686;
+}
+
+/**
+░█▀▄▀█ ░█▀▀▀ ░█▀▀▄ ▀█▀ ─█▀▀█ 　 ░█▀▀█ ░█─░█ ░█▀▀▀ ░█▀▀█ ▀█▀ ░█▀▀▀ ░█▀▀▀█ 
+░█░█░█ ░█▀▀▀ ░█─░█ ░█─ ░█▄▄█ 　 ░█─░█ ░█─░█ ░█▀▀▀ ░█▄▄▀ ░█─ ░█▀▀▀ ─▀▀▀▄▄ 
+░█──░█ ░█▄▄▄ ░█▄▄▀ ▄█▄ ░█─░█ 　 ─▀▀█▄ ─▀▄▄▀ ░█▄▄▄ ░█─░█ ▄█▄ ░█▄▄▄ ░█▄▄▄█
+*/
+
+@media (max-width:300px){
+    body{
+        background-image: url(../imagenes/hexagon2_min.jpg);
+        background-size: 220%;
+        background-position: center;
+    }
+    .trum{
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    #go a{
+        margin:30px 50px 0 50px;
+        text-align: center;
+    }
+    
+    .btn{
+        padding: 5px;
+        margin: 20px 5px 10px 5px;
+    }
+
+    #redes{
+        margin: 390px 10px 40px 0;
+        padding: 20px;
+    
+    }
+    footer{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width:301px){
+    body{
+        background-image: url(../imagenes/hexagon2_min.jpg);
+        background-size: 180%;
+        background-position: center;
+    }
+    .trum{
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    #go a{
+        width: 30%;
+        margin:0 auto;
+        margin-top:30px;
+        text-align: center;
+    }
+    
+    .btn{
+        padding: 5px;
+        margin: 20px 5px 10px 5px;
+    }
+
+    #redes{
+        margin: 400px 10px 30px 0;
+        padding: 10px;
+        display: inline-block;
+    
+    }
+    #redes img{
+        width: 15px;
+        
+    }
+    footer{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(min-width:480px){ /* b4 768*/
+    body{
+        background-image: url(../imagenes/hexagon2_max.jpg);
+        background-size: 220%;
+        background-position: center;
+    }
+    .trum{
+        margin-top: 5px;
+        width: 90%;
+    }
+
+    #go a{
+        width: 30%;
+        margin:0 auto;
+        text-align: center;
+    }
+    
+    .btn{
+        padding: 5px;
+        margin: 20px 5px 10px 5px;
+    }
+
+    #redes{
+        margin: 390px 10px 50px 0;
+        padding: 10px;
+        display: inline-block;
+    
+    }
+    #redes img{
+        width: 15px;
+        
+    }
+    footer{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(min-width:670px){
+    body{
+        text-align: center;
+    }
+
+    .trum{
+        width: 90%;
+    }
+    
+    #go a{
+        
+        width: 15%;
+        margin:0 auto;
+        text-align: center;
+    }   
+
+    body{
+        background-image: url(../imagenes/hexagon2_max.jpg);
+        background-size: 1300px;
+        background-position: center;
+    }   
+}
+
+
+@media(min-width:1080px){
+    .trum{
+        width: 80%;
+    }
+
+    body{
+        background-image: url(../imagenes/hexagon2_max.jpg);
+    }
+
+    footer{
+        font-size: 25px;
+    }
+
+    .btn{
+        font-size: 25px;
+    }
+
+    #go a{
+        font-size: 25px;
+    }
+}
+@media(min-width:1500px){
+    body{
+        background-image: url(../imagenes/hexagon2_max.jpg);
+        background-size: 1300px;
+        background-position: center;
+    }
+
+    .trum{
+        width: 70%;
+        transition: 0.6s;
+    }
+    .trum:hover{
+        /** background: linear-gradient(315deg,#e7681e,#22052e);*/
+        transform: scale(1.05);
+    }
+
+}
+@media(min-width:1920px){
+
+    body{
+        background-size: 65%;
+    }
+    .trum{
+        width: 60%;
+    }
+
+    footer{
+        font-size: 35px;
+    }
+    
+    .btn{
+        font-size: 40px;
+    }
+    #redes img{
+        width: 40px;
+    }
+}
+
+.info_covid{
+    display: none;
+}
